@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RootController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <br><br>
+    <h2> Welcome to  {{ course_name }} course</h2>
+
+    <br>
+    <ol>
+        <li><a href="{{ path('python', {'chapter' : 'welcome'}) }}">Hello World</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'variables'}) }}">Variables & Types</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'lists'}) }}">Lists</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'operators'}) }}">Basic Operators</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'string_formatting'}) }}">String Formatting</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'string_operations'}) }}">Basic String Operations</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'conditions'}) }}">Conditions</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'loops'}) }}">Loops</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'functions'}) }}">Functions</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'classes'}) }}">Classes</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'dictionaries'}) }}">Dictionaries</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'modules'}) }}">Modules and Packages</a></li>
+        <li><a href="{{ path('python', {'chapter' : 'quiz'}) }}">Quiz</a></li>
+    </ol>
+
+</div>
+{% endblock %}
